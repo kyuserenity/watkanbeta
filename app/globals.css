@@ -1,24 +1,38 @@
 @import "tailwindcss";
 
-@theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+body {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  font-family: Prompt, sans-serif;
 }
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+hr {
+  @apply border-zinc-200 dark:border-zinc-800;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+input {
+  @apply bg-transparent outline-none w-full;
+}
+
+.btn {
+  cursor: pointer;
+  transition: .2s all;
+  &:active {opacity: 0.5 !important;}
+  @media (hover:hover) {
+    &:hover {opacity: 0.75;}
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.box {
+  @apply bg-zinc-100 dark:bg-zinc-900;
+  &.this, & .this {
+    @apply bg-zinc-900 text-zinc-50 dark:bg-zinc-100 dark:text-zinc-900;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
 }
