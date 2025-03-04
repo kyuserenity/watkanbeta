@@ -2,7 +2,6 @@
 
 import { supabase } from "@/utils/supabase/client";
 import { CheckSquare2 } from "lucide-react";
-import { redirect } from "next/dist/server/api-utils";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,10 +11,8 @@ export default function Page() {
       provider: "discord",
       options: {
         redirectTo: window.location.origin+"/login/callback",
-        skipBrowserRedirect: true,
       }
     });
-    alert(url);
   };
   return (
     <div>
