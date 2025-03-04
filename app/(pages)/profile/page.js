@@ -63,7 +63,7 @@ export default function Page() {
 
   return (
     <div className="grid gap-4">
-      <div className="relative w-28 aspect-square mx-auto rounded-lg">
+      <div className="relative w-24 aspect-square mx-auto rounded-lg">
         <div className="box rounded-lg w-full h-full absolute top-0 left-0 animate-pulse"></div>
         <Image className="w-full relative h-full object-cover rounded-lg" src={user.avatar_url} alt={user.username} width={0} height={0} sizes="50vw" priority/>
       </div>
