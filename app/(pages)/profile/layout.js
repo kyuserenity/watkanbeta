@@ -7,7 +7,7 @@ export const metadata = {title: "โปรไฟล์"};
 export default function Layout({ children }) {
   return (
     <>
-      <Header><p className="text-4xl font-black">SEARCH</p></Header>
+      <Header><p className="text-4xl font-black">PROFILE</p></Header>
       <hr/>
       <main className="max-w-lg mx-auto p-4 grid gap-4 mb-40">
         {children}
