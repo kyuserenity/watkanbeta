@@ -29,7 +29,7 @@ export default function Page() {
   if (loading) {
     return (
       <div className="grid gap-4">
-        <div className="box w-28 aspect-square mx-auto rounded-lg animate-pulse"></div>
+        <div className="box w-24 aspect-square mx-auto rounded-lg animate-pulse"></div>
         <div className="text-center">  
           <p className="box mx-auto w-min font-black text-transparent animate-pulse px-4 rounded-lg">username</p>
           <p className="box text-transparent mx-auto min-w-1/2 w-min mt-2 animate-pulse px-4 rounded-lg">bio</p>
