@@ -33,17 +33,17 @@ export default function Page() {
           <p className="text-transparent mx-auto min-w-1/2 w-min mt-2 bg-zinc-200 dark:bg-zinc-800 animate-pulse px-4 rounded-lg">bio</p>
         </div>
         <div className="flex gap-4">
-          <button className="box btn flex flex-col gap-2 justify-center items-center p-4 flex-1 rounded-lg">
-            <p className="text-transparent bg-zinc-200 dark:bg-zinc-800 animate-pulse px-4 rounded-lg">0</p>
-            <p className="text-transparent mx-auto min-w-1/2 w-min mt-2 bg-zinc-200 dark:bg-zinc-800 animate-pulse rounded-lg text-nowrap">ผู้ติดตาม</p>
+          <button className="box btn text-transparent animate-pulse flex flex-col gap-2 justify-center items-center p-4 flex-1 rounded-lg">
+            <p>0</p>
+            <p>ผู้ติดตาม</p>
           </button>
-          <button className="box btn flex flex-col gap-2 justify-center items-center p-4 flex-1 rounded-lg">
-            <p className="text-transparent bg-zinc-200 dark:bg-zinc-800 animate-pulse px-4 rounded-lg">0</p>
-            <p className="text-transparent mx-auto min-w-1/2 w-min mt-2 bg-zinc-200 dark:bg-zinc-800 animate-pulse rounded-lg text-nowrap">ถูกใจ</p>
+          <button className="box btn text-transparent animate-pulse flex flex-col gap-2 justify-center items-center p-4 flex-1 rounded-lg">
+            <p>0</p>
+            <p>ถูกใจ</p>
           </button>
-          <button className="box btn flex flex-col gap-2 justify-center items-center p-4 flex-1 rounded-lg">
-            <p className="text-transparent bg-zinc-200 dark:bg-zinc-800 animate-pulse px-4 rounded-lg">0</p>
-            <p className="text-transparent mx-auto min-w-1/2 w-min mt-2 bg-zinc-200 dark:bg-zinc-800 animate-pulse rounded-lg text-nowrap">ของขวัญ</p>
+          <button className="box btn text-transparent animate-pulse flex flex-col gap-2 justify-center items-center p-4 flex-1 rounded-lg">
+            <p>0</p>
+            <p>ของขวัญ</p>
           </button>
         </div>
         <div className="flex gap-4">
