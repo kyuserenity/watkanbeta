@@ -18,7 +18,7 @@ export default function Page() {
   useEffect(() => {
     async function getUser() {
       const { data: auth } = await supabase.auth.getUser();
-      if (!auth) redirect('/login');
+      if (!auth.user) redirect('/login');
       const { data: user } = await supabase.from("profiles").select("*").eq("id", auth.user.id).limit(1).single();
       setUser(user);
       setLoading(false);
