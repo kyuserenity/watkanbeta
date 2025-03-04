@@ -34,7 +34,7 @@ export default function Page() {
       </div>
       <div className="grid gap-2">
         <button className="box this btn p-4 rounded-lg flex gap-4 items-center justify-center" onClick={signInWithDiscord}>
-          <Image src={"/discordicon.jpg"} width={40} height={40} alt="Discord" priority/>
+          <Image className="aspect-square w-7 h-5" width={0} height={0} sizes="10vw" src={"/discordicon.jpg"} alt="" priority/>
           <p className="text-xl font-black">Join with Discord</p>
         </button>
       </div>
