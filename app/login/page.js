@@ -8,14 +8,14 @@ import Link from "next/link";
 
 export default function Page() {
   async function signInWithDiscord() {
-    const { data } = await supabase.auth.signInWithOAuth({
+    const { data: { url } } = await supabase.auth.signInWithOAuth({
       provider: "discord",
       options: {
         redirectTo: window.location.origin+"/login/callback",
         skipBrowserRedirect: true,
       }
     });
-    redirect(data.url);
+    alert(url);
   };
   return (
     <div>
