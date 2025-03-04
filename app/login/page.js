@@ -10,7 +10,7 @@ export default function Page() {
     supabase.auth.signInWithOAuth({
       provider: "discord",
       options: {
-        redirectTo: "http://192.168.1.105:3000/api/auth/callback"
+        redirectTo: window.location.origin + "/api/auth/callback"
       }
     });
   };
